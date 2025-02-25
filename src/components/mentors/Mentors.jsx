@@ -6,11 +6,12 @@ import {Clock} from "../clock/Clock"
 
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/200.css";
+import { Mcards } from "./cardss/Mcards";
 
 
 export function Mentors() {
   return (
-    <div className="flex flex-col items-center relative py-[5rem]">
+    <div className="flex flex-col items-center relative py-[5rem]" >
       <picture>
         <source srcSet={desk} media="(min-width: 1282px)" />
         <source
@@ -24,9 +25,8 @@ export function Mentors() {
         />
       </picture>
 
-      <div className="flex flex-col items-center">
-   
-        <div className="flex flex-col items-center gap-[1rem] bg-[#37373b]/45 w-[90%]  rounded-2xl px-[1.2rem] py-[3.5rem]">
+      <div className="flex flex-col items-center gap-[3rem]">
+        <div className="flex flex-col items-center gap-[1rem] bg-[#37373b]/45 w-[90%] lg:w-[30%]  rounded-2xl px-[1.2rem] py-[3.5rem]">
           <img src={garantia} alt="img" className="w-[14rem]" />
           <h3 className="text-[1.8rem] font-semibold font-[montserrat] text-[#f1f1f1] ">
             Garantia 7 dias!
@@ -35,6 +35,13 @@ export function Mentors() {
             Confiamos tanto na eficácia do nosso produto que oferecemos uma
             garantia incondicional de 7 dias
           </p>
+        </div>
+        <h2 className="text-[#F4C257] font-semibold font-[poppins] text-3xl text-center">
+          Quem serão os seus mentores
+        </h2>
+        <div className="lg:w-[80%] lg:mx-auto">
+
+        <Mcards/>
         </div>
       </div>
     </div>

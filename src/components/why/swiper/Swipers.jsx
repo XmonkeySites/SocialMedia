@@ -15,7 +15,7 @@ import { text, title } from "framer-motion/client";
 // Componente de Card
 const CardModule = ({ title, text }) => {
   return (
-    <div className="flex flex-col bg-[#0E0E0E] w-[15rem] h-[22rem] lg:w-[17rem] lg:h-[25rem] border border-gray-600/40 px-[1rem] rounded-md">
+    <div className="flex flex-col bg-[#0E0E0E] w-[15rem] h-[22rem] lg:w-[17rem] lg:h-[25rem] border border-gray-600/40 px-[0.8rem] rounded-md">
       <hr className="w-14 border-2 border-[#F4C257] translate-x-7 glowing-hr" />
       <div className="flex flex-col mt-5 gap-5">
         <FaCheck className="text-4xl text-[#F4C257] my-1 translate-x-[2.5rem] translate-y-[-0.5rem]" />
@@ -60,16 +60,17 @@ const modules = [
     title: "Módulo 6: Construindo uma carreira sólida",
 
     text: "Fortaleça seu posicionamento, crie autoridade, faça networking e desenvolva um portfólio de impacto. Bônus: Mapa de posicionamento.",
-},
-{
-    title:"Módulo 7:Profissionalize seu trabalho",
+  },
+  {
+    title: "Módulo 7:Profissionalize seu trabalho",
 
-    text:"Formalize seu negócio, precifique corretamente seus serviços e proteja-se com contratos. Bônus: Modelos prontos de precificação e contratos",
+    text: "Formalize seu negócio, precifique corretamente seus serviços e proteja-se com contratos. Bônus: Modelos prontos de precificação e contratos",
+  },
 
-},
-
-
-  
+  {
+    title: "Módulo Bônus: Fundamentos de Tráfego Pago",
+    text: "Aprenda os princípios do tráfego pago, como configurar campanhas no Meta Ads e Google Ads, segmentar o público certo e analisar métricas para otimizar resultados.",
+  },
 ];
 
 // Componente do Swiper com loop e autoplay
