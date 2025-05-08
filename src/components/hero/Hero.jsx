@@ -44,13 +44,13 @@ export function Hero() {
           />
         </picture>
 
-        <div className=" flex flex-col items-center  lg:w-[40%] lg:my-[6rem] lg:items-start lg:ml-[8rem] 2xl:ml-[20rem] ">
+        <div className=" flex flex-col items-center container relative lg:my-[6rem] lg:items-start lg:ml-[8rem] 2xl:ml-[20rem] ">
           <img
             src={logo}
             alt="logo"
             className="w-[50%] md:w-[30%] mt-3 lg:w-[10rem]"
           />
-          <div className="flex flex-col items-center w-[91%] lg:items-start">
+          <div className="flex flex-col items-center w-[91%] lg:w-2xl lg:items-start">
             <h2 className="text-[1.37rem] 2xl:text-[2.3rem] font-semibold text-[#D1AE6C] font-[poppins] lg:leading-[2.5rem]">
               A melhor agência de marketing digital do Brasil{" "}
               <span className=" text-white">
@@ -87,16 +87,16 @@ export function Hero() {
               </div>
             </a>
           </div>
-        </div>
         <div className="h-full">
           <img
             src={home}
             alt=""
-            className="bottom-0 w-[25rem] 2xl:w-[40rem] md:hidden lg:block lg:w-[35rem] mt-[3rem] md:w-[20rem] 2xl:absolute lg:right-0 2xl:translate-x-[-20rem] "
+            className="bottom-0 w-[25rem] 2xl:w-[35rem] md:hidden lg:block lg:w-[35rem] mt-[3rem] md:w-[20rem] 2xl:absolute lg:right-0  "
           />
         </div>
         <hr className="w-[100vw] border-2  border-[#F4C257] left-0 bottom-0 absolute" />
       </div>
+        </div>
     </>
   );
 }

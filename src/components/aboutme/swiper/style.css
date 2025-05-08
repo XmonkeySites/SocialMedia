@@ -1,0 +1,53 @@
+/* Swiper container com ajustes de largura e espaçamento */
+.swiper {
+    width: 60%;
+    max-width: 100vw;
+    padding: 0 1rem;
+}
+
+/* Responsividade para o swiper em telas menores */
+@media (max-width: 1024px) {
+    .swiper {
+        width: 100%;
+        padding: 0 1rem; /* Ajuste de padding para telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        width: 100%;
+        padding: 0 1rem; /* Adiciona espaçamento lateral */
+    }
+}
+
+@media (max-width: 640px) {
+    .swiper {
+        width: 100%;
+        padding: 0; /* Reduz o padding para telas menores */
+    }
+}
+
+/* Slide responsivo com menor espaço */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    will-change: transform, opacity; /* Otimização para animações */
+}
+
+/* Ajustes de paginação do swiper (se necessário) */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Esconde a paginação caso não queira ela visível */
+.append-buttons {
+    display: none;
+}

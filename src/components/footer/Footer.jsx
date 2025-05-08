@@ -10,7 +10,7 @@ export function Footer() {
 
 
   return (
-    <footer className=" text-white font-medium font-[poppins] py-8 relative">
+    <footer className=" text-white font-medium bg-[#000016] font-[poppins] py-8 relative">
       <picture>
         <source srcSet={desk} media="(min-width: 1282px)" />
         <source

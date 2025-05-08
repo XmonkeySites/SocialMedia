@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 
-import cell from "/bgvideocell.webp";
-import mac from "/bgvideomac.webp";
-import desk from "/bgvideodesk.webp";
+
 
 import { FaCheckCircle } from "react-icons/fa";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
@@ -26,21 +24,10 @@ export function Plan() {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col items-center gap-[2rem] py-[2rem] lg:py-auto pb-[5rem]">
-        <picture>
-          <source srcSet={desk} media="(min-width: 1282px)" />
-          <source
-            srcSet={mac}
-            media="(min-width: 768px) and (max-width: 1281px)"
-          />
-          <img
-            src={cell}
-            alt="background"
-            className="w-[100vw] h-[100%] absolute z-[-1] top-0 right-0"
-          />
-        </picture>
-        <div className="flex flex-col items-center ">
-          <div className="flex flex-col items-center lg:flex-row w-[100vw] mx-auto justify-center lg:gap-[1.5rem]">
+      <div className="relative flex flex-col bgcards items-center gap-[2rem] py-[1rem] lg:py-auto pb-[5rem]">
+
+        <div className="flex flex-col container items-center ">
+          <div className="flex flex-col items-center container lg:flex-row w-[100vw] mx-auto justify-center lg:gap-[1.5rem]">
             <div className="flex flex-col items-center  justify-center ">
               <div className="flex flex-col items-center ">
                 <h2 className="text-white font-semibold font-[poppins]  text-[1.8rem]  text-center">
@@ -119,7 +106,7 @@ export function Plan() {
                 </ul>
               </div>
             </div>
-            <div className="bg-[#362D1C] flex flex-col items-center  rounded-2xl  w-[90%] lg:w-auto  2xl:w-[30%] py-[2rem] 2xl:py-[5rem] mt-[3rem]">
+            <div className="bg-[#362D1C] flex flex-col items-center  rounded-2xl  w-[90%] lg:w-85 mx-auto 2xl:w-[42%] py-[2rem] 2xl:py-[5rem] mt-[3rem]">
               <h2 className="text-white font-semibold font-[poppins]  text-[1.8rem]  text-center">
                 Garanta seu acesso
               </h2>

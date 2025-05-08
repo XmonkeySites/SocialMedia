@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import desk from "/bgvideodesk.webp";
+
 
 
 import "@fontsource/montserrat/500.css";
@@ -46,10 +46,10 @@ export function Faq() {
 
   return (
     <section
-      className=" text-white"
-      style={{ backgroundImage: `url(${desk})` }}
+      className=" text-white bgcardorange"
+   
     >
-      <div className="max-w-[90%] mx-auto py-8 lg:flex lg:items-center lg:justify-center ">
+      <div className="max-w-[90%] container mx-auto py-8 lg:flex lg:items-center lg:justify-center ">
         <div className="text-center mb-6 lg:w-[40%] lg:flex lg:flex-col ">
           <h2
             className="text-[8rem] md:text-[10rem] font-bold  text-[#1d1d1d] font-[poppins] leading-[7.5rem] md:leading-[10rem]   "

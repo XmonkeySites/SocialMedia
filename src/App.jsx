@@ -9,19 +9,18 @@ import { Why } from "./components/why/why";
 import { Edu } from "./components/edu/Edu";
 import { Footer } from "./components/footer/Footer";
 import { Clock } from "./components/clock/Clock";
+import { Aboutme } from "./components/aboutme/Aboutme";
 
 function App() {
   return (
     <>
-      <Hero />
+      <Hero/>
       <Scards />
       <Who />
       <Why />
       <Plan />
-      <Mentors />
+     <Aboutme/>
       <Faq />
-      <Edu />
-      <Clock />
       <Footer />
     </>
   );

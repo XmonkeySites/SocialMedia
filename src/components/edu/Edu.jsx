@@ -22,7 +22,7 @@ export function Edu() {
           className="w-[100vw] h-[100%] absolute z-[-1] top-0 right-0"
         />
       </picture>
-      <div className="flex flex-col-reverse w-[90%] mx-auto lg:flex-row lg:gap-5 2xl:w-[60%] toLeft relative">
+      <div className="flex flex-col-reverse container w-[90%] mx-auto lg:flex-row lg:gap-5 2xl:w-[60%] toLeft relative">
         <div className="flex flex-col gap-5 items-center text-white lg:w-[40%] lg:mx-auto lg:items-start">
           <h1 className="pt-10 text-[1.3rem] tracking-[.15rem] text-orange lg:pl-5">
             A MENTE POR TRÁS DE TUDO

@@ -1,4 +1,6 @@
-import {Cards} from './cmcards/Cards'
+import { useState, useEffect } from "react";
+
+import { Cards } from "./cmcards/Cards";
 import cell from "/bgcardcell.webp";
 import mac from "/bgcardmac.webp";
 import desk from "/bgcarddesk.webp";
@@ -6,6 +8,14 @@ import desk from "/bgcarddesk.webp";
 import "@fontsource/montserrat/600.css";
 
 export function Scards() {
+    const [angle, setAngle] = useState(196);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setAngle((prevAngle) => (prevAngle + 1) % 360);
+      }, 10);
+      return () => clearInterval(interval);
+    }, []);
   return (
     <div className="flex flex-col items-center  pb-[3rem] relative">
       <picture>
@@ -20,11 +30,25 @@ export function Scards() {
           className="w-[100vw] h-[100%] absolute z-[-1] top-0 right-0"
         />
       </picture>
-      <div className="w-[90%]">
+      <div className="container]">
         <h2 className="py-[3rem] text-[1.8rem] lg:text-3xl font-[montserrat] font-semibold text-[#F4C257] text-center ">
-          Aprenda de uma vez por todas</h2>
+          Aprenda de uma vez por todas
+        </h2>
         <Cards />
       </div>
+      <a href="" className="items-center">
+        <div
+          className="w-auto h-auto flex items-center justify-center my-[2rem] rounded-md px-[2.3rem] py-[0.8rem]"
+          style={{
+            backgroundImage: `linear-gradient(${angle}deg, #FCD688 0%, #9A6C2E 100%)`,
+            transition: "background-image 0.05s linear",
+          }}
+        >
+          <h1 className="text-black text-[1.2rem] font-medium text-center font-[poppins]">
+            QUERO MINHA VAGA
+          </h1>
+        </div>
+      </a>
     </div>
   );
 }

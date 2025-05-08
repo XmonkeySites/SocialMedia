@@ -1,29 +1,44 @@
 @import "tailwindcss";
 
-
 @theme {
-  --color-darkgold: #D1AE6C;
-  --color-gold: #F4C257;
- 
+  --color-darkgold: #d1ae6c;
+  --color-gold: #f4c257;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden; /* Evita rolagem horizontal */
   width: 100%;
 }
 
-
 @keyframes glow {
-  0%, 100% {
-    box-shadow: 0 0 5px #F4C257, 0 0 10px #F4C257, 0 0 20px #F4C257;
+  0%,
+  100% {
+    box-shadow: 0 0 5px #f4c257, 0 0 10px #f4c257, 0 0 20px #f4c257;
   }
   50% {
-    box-shadow: 0 0 10px #F4C257, 0 0 20px #F4C257, 0 0 40px #F4C257;
+    box-shadow: 0 0 10px #f4c257, 0 0 20px #f4c257, 0 0 40px #f4c257;
   }
+}
+
+.container {
+  max-width: 1380px; /* Ajuste esse valor conforme necessário */
+  margin: 0 auto;
+  padding: 20px; /* Pode ser ajustado conforme o design */
 }
 
 .glowing-hr {
   animation: glow 1.5s infinite alternate;
+}
+
+.bgcardorange{
+  background:linear-gradient(45deg, #BB1900, #FD6F01, #FFB000);
+}
+
+.bgcardblue{
+background: linear-gradient(258.26deg, #000016 29.73%, #120736 80.3%, #041753 102.5%);
+
+
 }
 
 .gradient-hr {
@@ -32,8 +47,11 @@ html, body {
   animation: gradient-shift 3s ease infinite;
 }
 
-
-body{
-  overflow-x: hidden;
+a:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
 }
 
+body {
+  overflow-x: hidden;
+}
