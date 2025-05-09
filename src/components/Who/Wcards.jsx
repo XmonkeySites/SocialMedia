@@ -25,7 +25,7 @@ function Makecards({ paragraph, type }) {
     <div className="bg-[#0f0f0f]/45  mx-auto w-full h-full rounded-[10px] py-[0.4rem] px-[1rem] ">
       <div className="flex flex-row justify-center items-center gap-[1rem]">
         {Icon && (
-          <Icon className="min-w-6 min-h-6 text-[#000000] my-1 translate-x-[0.4rem]" />
+          <Icon className="min-w-6 min-h-6 text-[#120736] my-1 translate-x-[0.4rem]" />
         )}
         <p className="text-[1.2rem] min-lg:text-[1.4rem] text-[#f1f1f1] font-[montserrat] ">
           {" "}

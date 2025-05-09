@@ -23,11 +23,12 @@ const CardModule = ({ imgs, name, about, funct }) => {
         alt={`Imagem de ${name}`}
         loading="lazy"
         className="object-cover rounded-lg w-[20rem] h-auto"
-        width="300" height="300"
+        width="300"
+        height="300"
       />
       <h2 className="text-white text-2xl font-semibold ">{name}</h2>
       <p className="text-white font-light text-center ">{about}</p>
-      <span className="text-[#D1AE6C] font-bold">
+      <span className="text-[#CF3300] font-bold">
         <i>{funct} </i>
       </span>
     </div>

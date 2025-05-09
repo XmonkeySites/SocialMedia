@@ -17,7 +17,7 @@ export function Scards() {
       return () => clearInterval(interval);
     }, []);
   return (
-    <div className="flex flex-col items-center  pb-[3rem] relative">
+    <div className="flex flex-col items-center bgcardblue  pb-[3rem] relative">
       <picture>
         <source srcSet={desk} media="(min-width: 1282px)" />
         <source
@@ -31,7 +31,7 @@ export function Scards() {
         />
       </picture>
       <div className="container]">
-        <h2 className="py-[3rem] text-[1.8rem] lg:text-3xl font-[montserrat] font-semibold text-[#F4C257] text-center ">
+        <h2 className="py-[3rem] text-[1.8rem] lg:text-3xl font-[montserrat] font-semibold text-[#FD6F01] text-center ">
           Aprenda de uma vez por todas
         </h2>
         <Cards />
@@ -40,7 +40,7 @@ export function Scards() {
         <div
           className="w-auto h-auto flex items-center justify-center my-[2rem] rounded-md px-[2.3rem] py-[0.8rem]"
           style={{
-            backgroundImage: `linear-gradient(${angle}deg, #FCD688 0%, #9A6C2E 100%)`,
+            backgroundImage: `linear-gradient(${angle}deg,  #FD6F01 0%, #FFB000 100%)`,
             transition: "background-image 0.05s linear",
           }}
         >

@@ -36,7 +36,7 @@ const AnimatedLine = () => {
         >
           <motion.path
             d="M0 0 Q100 0 350 0"
-            stroke="#0f0f0f"
+            stroke="#120736"
             strokeWidth="5"
             fill="transparent"
             initial={{ pathLength: 0 }}

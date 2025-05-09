@@ -24,8 +24,7 @@ export function Plan() {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col bgcards items-center gap-[2rem] py-[1rem] lg:py-auto pb-[5rem]">
-
+      <div className="relative flex flex-col bgcardorange items-center gap-[2rem] py-[1rem] lg:py-auto pb-[5rem]">
         <div className="flex flex-col container items-center ">
           <div className="flex flex-col items-center container lg:flex-row w-[100vw] mx-auto justify-center lg:gap-[1.5rem]">
             <div className="flex flex-col items-center  justify-center ">
@@ -106,28 +105,27 @@ export function Plan() {
                 </ul>
               </div>
             </div>
-            <div className="bg-[#362D1C] flex flex-col items-center  rounded-2xl  w-[90%] lg:w-85 mx-auto 2xl:w-[42%] py-[2rem] 2xl:py-[5rem] mt-[3rem]">
+            <div className="bg-[#041753]/93 flex flex-col items-center  rounded-2xl  w-[90%] lg:w-85 mx-auto 2xl:w-[42%] py-[2rem] 2xl:py-[5rem] mt-[3rem]">
               <h2 className="text-white font-semibold font-[poppins]  text-[1.8rem]  text-center">
                 Garanta seu acesso
               </h2>
               <span className="text-white font-semibold font-[poppins]  text-[1.95rem]  text-center">
                 50% OFF
               </span>
-              <span >
-
-              <span className="text-white font-extralight font-[poppins]  text-[0.95rem]  text-center">
-                De: R$1.197 por apenas
+              <span>
+                <span className="text-white font-extralight font-[poppins]  text-[0.95rem]  text-center">
+                  De: R$1.197 por apenas
+                </span>
+                <hr className="text-white/30" />
               </span>
-              <hr className="text-white/30"/>
-              </span>
-              <span className="text-[#CB8F39] font-semibold text-[2rem]">
+              <span className="text-[#FD6F01] font-semibold text-[2rem]">
                 R$ <span className="text-[3rem]">597</span>,00
               </span>
               <a href="">
                 <div
                   className="w-auto h-auto flex items-center justify-center mt-[2rem] rounded-md px-[2.3rem] py-[0.8rem]"
                   style={{
-                    backgroundImage: `linear-gradient(${angle}deg, #FCD688 0%, #9A6C2E 100%)`,
+                    backgroundImage: `linear-gradient(${angle}deg, #FD6F01 0%, #FFB000 100%)`,
                     transition: "background-image 0.05s linear",
                   }}
                 >

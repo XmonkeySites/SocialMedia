@@ -7,7 +7,7 @@ import desk from "/bgcarddesk.webp";
 
 export function Aboutme() {
   return (
-    <section className="pt-[3rem] relative ">
+    <section className="pt-[3rem] bgcardblue relative ">
               <picture>
                 <source srcSet={desk} media="(min-width: 1282px)" />
                 <source

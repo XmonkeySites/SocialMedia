@@ -45,14 +45,11 @@ export function Faq() {
   ];
 
   return (
-    <section
-      className=" text-white bgcardorange"
-   
-    >
+    <section className=" text-white bgcardorange">
       <div className="max-w-[90%] container mx-auto py-8 lg:flex lg:items-center lg:justify-center ">
         <div className="text-center mb-6 lg:w-[40%] lg:flex lg:flex-col ">
           <h2
-            className="text-[8rem] md:text-[10rem] font-bold  text-[#1d1d1d] font-[poppins] leading-[7.5rem] md:leading-[10rem]   "
+            className="text-[8rem] md:text-[10rem] font-bold  text-[#120736] font-[poppins] leading-[7.5rem] md:leading-[10rem]   "
             style={{ WebkitTextStroke: "2px white" }}
           >
             FAQ
@@ -69,11 +66,11 @@ export function Faq() {
             <div
               key={index}
               className={`border border-[#f1f1f1] rounded-md p-4 cursor-pointer w-[95%] mx-auto ${
-                activeIndex === index ? "bg-[#252525]" : "bg-[#252525]/90"
+                activeIndex === index ? "bg-[#030c83]" : "bg-[#030c83]/88"
               }`}
               onClick={() => toggleFAQ(index)}
             >
-              <h3 className="text-lg font-medium flex items-center justify-between text-[#F4C257]">
+              <h3 className="text-lg font-medium flex items-center justify-between text-white">
                 {faq.question}
                 <span>{activeIndex === index ? "-" : "+"}</span>
               </h3>

@@ -91,7 +91,7 @@ export function Hero() {
           <img
             src={home}
             alt=""
-            className="bottom-0 w-[25rem] 2xl:w-[35rem] md:hidden lg:block lg:w-[35rem] mt-[3rem] md:w-[20rem] 2xl:absolute lg:right-0  "
+            className="bottom-0 w-[25rem] 2xl:w-[35rem] md:hidden lg:block lg:w-[30rem] mt-[3rem] md:w-[20rem] lg:absolute lg:right-0  "
           />
         </div>
         <hr className="w-[100vw] border-2  border-[#F4C257] left-0 bottom-0 absolute" />

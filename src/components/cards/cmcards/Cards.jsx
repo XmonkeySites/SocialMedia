@@ -35,12 +35,12 @@ function Makecards({text,type}) {
   const Icon = getIcon(type);
 
   return (
-    <div className="flex flex-col bg-[#0E0E0E] w-[100%] 2xl:w-[80%] mx-auto h-[13rem] border-gray-600/40 border-1 pr-[10px] rounded-md">
-      <hr className="w-[3.5rem] border-[1.5px] border-[#F4C257] translate-x-[1.85rem] glowing-hr " />
+    <div className="flex flex-col bg-[#010129] w-[100%] 2xl:w-[80%] mx-auto h-[13rem] border-gray-600/40 border-1 pr-[10px] rounded-md">
+      <hr className="w-[3.5rem] border-[1.5px] border-[#FD6F01] translate-x-[1.85rem] glowing-hr " />
 
       <div className="flex flex-col pl-[2rem] mt-[1.2rem] gap-5">
         {Icon && (
-          <Icon className="text-[2.75rem] text-[#F4C257] my-1 translate-x-[0.4rem]" />
+          <Icon className="text-[2.75rem] text-[#FD6F01] my-1 translate-x-[0.4rem]" />
         )}
         <span className="text-white text-[1.1rem] font-medium  font-[montserrat] ">
           {text}{" "}
