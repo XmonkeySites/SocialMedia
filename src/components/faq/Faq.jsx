@@ -18,19 +18,19 @@ export function Faq() {
 
   const faqs = [
     {
-      question: "1. O curso é adequado para iniciantes?",
+      question: "1. O curso é presencial. Terei acesso a algo depois do evento?",
       answer:
-        "O Social Media PRO foi desenvolvido exclusivamente para profissionais que já atuam na área e querem elevar seu nível, atrair clientes HiTkt e aumentar seu faturamento.",
+        "Sim! Os participantes terão acesso a um material exclusivo pós-evento com os principais tópicos abordados, além de um grupo para troca de experiências e network com outros social media estratégicos.",
     },
     {
-      question: "2. Quanto tempo dura o curso?",
+      question: "2. Para quem é indicado o Social Media Premium? ",
       answer:
-        "O curso tem +30 aulas diretas ao ponto, com um conteúdo 100% prático e aplicável. Você pode assistir no seu próprio ritmo e já começar a implementar as estratégias desde a primeira aula. Além disso, o acesso é vitalício, então você pode revisar as aulas sempre que quiser.",
+        "Para social media que já têm alguma experiência, mas querem deixar de ser operacionais e começar a atuar de forma estratégica, sendo vistos como especialistas no que fazem.        ",
     },
     {
-      question: "3. Como faço para acessar o conteúdo?",
+      question: "3. O que vou aprender nesse curso que não aprendi em outros?",
       answer:
-        "Assim que sua inscrição for confirmada, você poderá acessar.  Todo o conteúdo fica disponível 24h por dia, no celular, tablet ou computador, para que você estude quando e onde quiser.",
+        "Estratégias reais, criadas e testadas por uma equipe que vive o marketing todos os dias. Você vai aprender posicionamento, autoridade, bastidores reais, estratégias avançadas, atendimento de alto padrão e como se destacar em um mercado competitivo.        ",
     },
     {
       question: "4. Há algum suporte disponível durante o curso?",
@@ -38,9 +38,9 @@ export function Faq() {
         "Sim! Além das aulas completas, você terá suporte direto na plataforma para tirar dúvidas e um grupo exclusivo de alunos. Aqui, você não aprende sozinho. Nossa missão é garantir que você aplique e tenha resultados reais no mercado.",
     },
     {
-      question: "5. Os conteúdos do curso são atualizados?",
+      question: "5. Esse curso é diferente do Social Media Gold?",
       answer:
-        "Sim! O mercado digital muda constantemente, e por isso mantemos nosso conteúdo sempre atualizado com as melhores estratégias, tendências e ferramentas do momento. Ao se inscrever, você garante acesso vitalício, incluindo todas as futuras atualizações e novos materiais que forem adicionados.",
+        "Sim! O Social Media Premium é um passo além. Aqui o foco é te posicionar como autoridade além de viver nossa metodologia presencialmente.",
     },
   ];
 
@@ -65,8 +65,8 @@ export function Faq() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`border border-[#f1f1f1] rounded-md p-4 cursor-pointer w-[95%] mx-auto ${
-                activeIndex === index ? "bg-[#030c83]" : "bg-[#030c83]/88"
+              className={`border border-[#f1f1f1] rounded-md p-4 cursor-pointer w-[90%] mx-auto ${
+                activeIndex === index ? "bg-[#000016]" : "bg-[#120736]/95"
               }`}
               onClick={() => toggleFAQ(index)}
             >

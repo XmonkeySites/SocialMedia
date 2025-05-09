@@ -24,11 +24,11 @@ export function Plan() {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col bgcardorange items-center gap-[2rem] py-[1rem] lg:py-auto pb-[5rem]">
-        <div className="flex flex-col container items-center ">
-          <div className="flex flex-col items-center container lg:flex-row w-[100vw] mx-auto justify-center lg:gap-[1.5rem]">
-            <div className="flex flex-col items-center  justify-center ">
-              <div className="flex flex-col items-center ">
+      <div className="relative flex flex-col w-full bgcardorange items-center gap-[2rem] py-[1rem] lg:py-auto pb-[5rem]">
+        <div className="flex flex-col mx-auto w-full justify-center items-center ">
+          <div className="flex flex-col items-center  container lg:flex-row  mx-auto justify-center lg:gap-[1.5rem]">
+            <div className="flex flex-col items-center   justify-center ">
+              <div className="flex flex-col items-center  ">
                 <h2 className="text-white font-semibold font-[poppins]  text-[1.8rem]  text-center">
                   Transforme seguidores
                 </h2>
@@ -40,8 +40,8 @@ export function Plan() {
                   <AnimatedLine />
                 </div>
               </div>
-              <div className="flex flex-col items-center  gap-[1rem] md:flex-row">
-                <ul className="flex flex-col items-start gap-[1.5rem]">
+              <div className="flex flex-col items-center justify-center mx-auto gap-[1rem] md:flex-row">
+                <ul className="flex flex-col items-start justify-center mx-auto gap-[1.5rem]">
                   <div className="w-full">
                     <li className="text-[1rem] font-[montserrat] text-white flex items-start gap-4">
                       <FaCheckCircle className="text-black text-[1.6rem]" />

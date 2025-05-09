@@ -35,7 +35,7 @@ function Makecards({text,type}) {
   const Icon = getIcon(type);
 
   return (
-    <div className="flex flex-col bg-[#010129] w-[100%] 2xl:w-[80%] mx-auto h-[13rem] border-gray-600/40 border-1 pr-[10px] rounded-md">
+    <div className="flex flex-col bg-[#010129] w-[100%] 2xl:w-[80%]  shadow-lg shadow-gray-900 hover:shadow-blue-900 mx-auto h-[13rem] border-gray-600/40 border-1 pr-[10px] rounded-md">
       <hr className="w-[3.5rem] border-[1.5px] border-[#FD6F01] translate-x-[1.85rem] glowing-hr " />
 
       <div className="flex flex-col pl-[2rem] mt-[1.2rem] gap-5">
