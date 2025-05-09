@@ -23,7 +23,7 @@ const CardModule = ({ title, text }) => {
         <h3 className="text-[#FD6F01] text-lg font-montserrat font-semibold">
           {title}
         </h3>
-        <span className="text-white text-base  font-montserrat">{text}</span>
+        <span className="text-white text-md font-light  font-montserrat">{text}</span>
       </div>
     </div>
   );

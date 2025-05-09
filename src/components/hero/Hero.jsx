@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import logo from "/logo.webp";
+import logo from "/logot.png";
 import cell from "/bghomecell.webp";
 import tab from "/bgcardmac.webp";
 import mac from "/bghomemac.webp";
@@ -48,13 +48,13 @@ export function Hero() {
           <img
             src={logo}
             alt="logo"
-            className="w-[50%] md:w-[30%] mt-3 lg:w-[10rem]"
+            className="w-[50%] md:w-[30%] mt-3 lg:w-[13rem]"
           />
           <div className="flex flex-col items-center w-[91%] lg:w-2xl lg:items-start">
             <h2 className="text-[1.37rem] 2xl:text-[2.3rem] font-semibold text-[#FD6F01] font-[poppins] lg:leading-[2.5rem]">
-              A melhor agência de marketing digital do Brasil{" "}
+             Torne-se uma autoridade{" "}
               <span className=" text-white">
-                ajudando na sua transformação!
+              para o marketing digital
               </span>{" "}
             </h2>
 
@@ -67,10 +67,10 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col items-center gap-[1rem] md:flex-row md:mt-[1rem]">
-              <img src={peop} alt="ref" className="w-[10rem] " />
+              <img src={peop} alt="ref" className="w-[10rem] max-md:mt-8 " />
               <span className="text-[#FD6F01] flex flex-col font-medium font-[poppins]">
-                <b> +500 alunos formados!</b>
-                <span className="font-light">98% alcançaram resultados!</span>
+                <b> +720 clientes atendidos!</b>
+                <span className="font-light">Faturamento de mais de R$450 milhões</span>
               </span>
             </div>
             <a href="">
@@ -82,7 +82,7 @@ export function Hero() {
                 }}
               >
                 <h1 className="text-black text-[1.2rem] font-medium text-center font-[poppins]">
-                  QUERO COMEÇAR AGORA
+                 APRENDA NOSSO METODO
                 </h1>
               </div>
             </a>
