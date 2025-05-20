@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import cell from "/bgcardcell.webp";
-import mac from "/bgcardmac.webp";
-import desk from "/bgcarddesk.webp";
+
 
 import { TbAccessibleFilled } from "react-icons/tb";
 import { PiMagnifyingGlassFill } from "react-icons/pi";
@@ -14,7 +12,6 @@ import { PiCaretCircleDoubleRightLight } from "react-icons/pi";
 import { Swipers } from "./swiper/Swipers";
 import Video from "./vid/Video";
 
-
 export function Why() {
   const [angle, setAngle] = useState(196);
 
@@ -26,18 +23,7 @@ export function Why() {
   }, []);
   return (
     <section className="flex flex-col bgcardblue items-center  relative pb-[3rem]">
-      <picture>
-        <source srcSet={desk} media="(min-width: 1282px)" />
-        <source
-          srcSet={mac}
-          media="(min-width: 768px) and (max-width: 1281px)"
-        />
-        <img
-          src={cell}
-          alt="background"
-          className="w-[100vw] h-[100%] absolute z-[-1] top-0 right-0"
-        />
-      </picture>
+
 
       <PiCaretCircleDoubleRightLight className="text-[3.5rem]  translate-y-[-1.3rem] text-[#FD6F01] bg-[#222122] rounded-[100px] rotate-[90deg]" />
 
@@ -71,12 +57,12 @@ export function Why() {
         <Video />
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col mt-10 items-center">
         <h2 className="text-[1.7rem] font-semibold font-[poppins] text-center text-white lg:w-[29rem]">
           e se <span className="text-[#FD6F01]">destaque no mercado </span> com
           a Metodologia da Xmonkey
         </h2>
-        <a href="">
+        <a href="https://wa.me/5571984782690" target="_blank">
           <div
             className="w-auto h-auto flex items-center justify-center mt-[2rem] rounded-md px-[2.3rem] py-[0.8rem]"
             style={{

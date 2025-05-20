@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
 
-
-
 import { FaCheckCircle } from "react-icons/fa";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
-
 
 import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/600.css";
@@ -114,14 +111,14 @@ export function Plan() {
               </span>
               <span>
                 <span className="text-white font-extralight font-[poppins]  text-[0.95rem]  text-center">
-                  De: R$1.197 por apenas
+                  De: R$597,00 por apenas
                 </span>
                 <hr className="text-white/30" />
               </span>
               <span className="text-[#FD6F01] font-semibold text-[2rem]">
-                R$ <span className="text-[3rem]">597</span>,00
+                R$ <span className="text-[3rem]">297</span>,00
               </span>
-              <a href="">
+              <a href="https://pay.kiwify.com.br/U0cuZcS" target="_blank">
                 <div
                   className="w-auto h-auto flex items-center justify-center mt-[2rem] rounded-md px-[2.3rem] py-[0.8rem]"
                   style={{

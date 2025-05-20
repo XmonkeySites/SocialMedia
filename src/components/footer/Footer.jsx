@@ -1,7 +1,4 @@
 
-import cell from "/bgcardcell.webp";
-import mac from "/bgcardmac.webp";
-import desk from "/bgcarddesk.webp";
 import logo from "/logofooter.webp";
 
 import "@fontsource/montserrat/500.css";
@@ -11,18 +8,7 @@ export function Footer() {
 
   return (
     <footer className=" text-white font-medium bg-[#000016] font-[poppins] py-8 relative">
-      <picture>
-        <source srcSet={desk} media="(min-width: 1282px)" />
-        <source
-          srcSet={mac}
-          media="(min-width: 768px) and (max-width: 1281px)"
-        />
-        <img
-          src={cell}
-          alt="background"
-          className="w-[100vw] h-[100%] absolute z-[-1] top-0 right-0"
-        />
-      </picture>
+
       <div className="container mx-auto px-4 lg:px-0 toLeft">
         {/* Logo */}
         <div className="flex justify-center mb-4">

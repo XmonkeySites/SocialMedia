@@ -24,8 +24,9 @@ export function Hero() {
   return (
     <>
       <div
-        className=" flex flex-col items-center lg:items-end 2xl:items-center bg-[#000016]/55 mx-auto relative  overflow-hidden lg:flex-row
+        className=" flex flex-col items-center lg:items-end 2xl:items-center  bg-[#000016]/55 bg-gradient-custom-max-md mx-auto relative  overflow-hidden lg:flex-row
 "
+
       >
         <picture>
           <source srcSet={desk} media="(min-width: 1282px)" />
@@ -44,7 +45,7 @@ export function Hero() {
           />
         </picture>
 
-        <div className=" flex flex-col items-center container relative lg:my-[6rem] lg:items-start lg:ml-[8rem] 2xl:ml-[20rem] ">
+        <div className=" flex flex-col max-md:text-center items-center container relative lg:my-[6rem] lg:items-start lg:ml-[8rem] 2xl:ml-[20rem] ">
           <img
             src={logo}
             alt="logo"
@@ -52,10 +53,8 @@ export function Hero() {
           />
           <div className="flex flex-col items-center w-[91%] lg:w-2xl lg:items-start">
             <h2 className="text-[1.37rem] 2xl:text-[2.3rem] font-semibold text-[#FD6F01] font-[poppins] lg:leading-[2.5rem]">
-             Torne-se uma autoridade{" "}
-              <span className=" text-white">
-              para o marketing digital
-              </span>{" "}
+              Torne-se uma autoridade{" "}
+              <span className=" text-white">para o marketing digital</span>{" "}
             </h2>
 
             <p className="text-white text-[0.9rem] 2xl:text-[1.5rem] font-extralight font-[poppins] mt-5  lg:text-justify">
@@ -70,10 +69,12 @@ export function Hero() {
               <img src={peop} alt="ref" className="w-[10rem] max-md:mt-8 " />
               <span className="text-[#FD6F01] flex flex-col font-medium font-[poppins]">
                 <b> +720 clientes atendidos!</b>
-                <span className="font-light">Faturamento de mais de R$450 milhões</span>
+                <span className="font-light">
+                  Faturamento de mais de R$450 milhões
+                </span>
               </span>
             </div>
-            <a href="">
+            <a href="https://wa.me/5571984782690" target="_blank">
               <div
                 className="w-auto h-auto flex items-center justify-center my-[2rem] rounded-md px-[2.3rem] py-[0.8rem]"
                 style={{
@@ -82,21 +83,21 @@ export function Hero() {
                 }}
               >
                 <h1 className="text-black text-[1.2rem] font-medium text-center font-[poppins]">
-                 APRENDA NOSSO METODO
+                  APRENDA NOSSO METODO
                 </h1>
               </div>
             </a>
           </div>
-        <div className="h-full">
-          <img
-            src={home}
-            alt=""
-            className="bottom-0 w-[25rem] 2xl:w-[35rem] md:hidden lg:block lg:w-[30rem] mt-[3rem] md:w-[20rem] lg:absolute lg:right-0  "
-          />
+          <div className="h-full">
+          </div>
+            <img
+              src={home}
+              alt=""
+              className="bottom-0 w-[25rem] 2xl:w-[35rem] md:hidden lg:block lg:w-[30rem] mt-[3rem] md:w-[17rem] lg:absolute lg:right-0 xl:right-1/8  "
+            />
         </div>
-      </div>
         <hr className="w-full border-2  border-[#FD6F01] left-0 bottom-0 absolute" />
-        </div>
+      </div>
     </>
   );
 }

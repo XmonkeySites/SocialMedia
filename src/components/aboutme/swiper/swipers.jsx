@@ -9,7 +9,8 @@ import { Pagination, Autoplay } from "swiper/modules";
 import result from "/lud.webp";
 import result1 from "/kaka.webp";
 import result2 from "/loren.webp";
-import result3 from "/dudu.webp";
+import result3 from "/edu.webp";
+import result4 from "/lai.webp";
 
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/400.css";
@@ -22,7 +23,7 @@ const CardModule = ({ imgs, name, about, funct }) => {
         src={imgs}
         alt={`Imagem de ${name}`}
         loading="lazy"
-        className="object-cover rounded-lg w-[20rem] h-auto"
+        className="object-cover top-0 relative rounded-lg w-[20rem] h-auto"
         width="300"
         height="300"
       />
@@ -57,6 +58,13 @@ export const Swipers = () => {
       about:
         "Lidera toda a equipe operacional, garantindo uma entrega de excelência, profissionalismo e alto padrão de qualidade para os clientes",
       funct: "Diretora Operacional",
+    },
+    {
+      imgs: result4,
+      name: "Laiana Neves",
+      about:
+        "especialista em estratégia digital, posicionamento de marca e criação de conteúdo.",
+      funct: "Coordenadora da Xmonkey Academy",
     },
     {
       imgs: result3,

@@ -24,24 +24,27 @@ body {
 .container {
   max-width: 1380px; /* Ajuste esse valor conforme necessário */
   margin: 0 auto;
-  padding: 20px; /* Pode ser ajustado conforme o design */
+  padding: 20px 10px 0px 10px; /* Pode ser ajustado conforme o design */
 }
 
 .glowing-hr {
   animation: glow 1.5s infinite alternate;
 }
 
-.bgcardorange{
-  background:linear-gradient(45deg, #BB1900, #FD6F01, #FFB000);
+.bgcardorange {
+  background: linear-gradient(45deg, #bb1900, #fd6f01, #ffb000);
 }
 
-.bgcardblue{
-background: linear-gradient(258.26deg, #000016 29.73%, #120736 80.3%, #041753 102.5%);
-
-
+.bgcardblue {
+  background: linear-gradient(
+    258.26deg,
+    #000016 29.73%,
+    #120736 80.3%,
+    #041753 102.5%
+  );
 }
 
-.bgteste{
+.bgteste {
   background: radial-gradient(
     80.03% 175.85% at 34.57% 81.98%,
     rgba(0, 0, 22, 0.7) 29.4%,
@@ -50,10 +53,16 @@ background: linear-gradient(258.26deg, #000016 29.73%, #120736 80.3%, #041753 10
     rgba(187, 25, 0, 0.3) 88.18%,
     rgba(253, 111, 1, 0.4) 100%
   );
-  
-
-
 }
+
+  @layer utilities {
+    @media (max-width: 768px) {
+      .bg-gradient-custom-max-md {
+        background: linear-gradient(90deg, #000016 96%, #fd6f01 100%);
+      }
+    }
+  }
+
 
 .gradient-hr {
   background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);

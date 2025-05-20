@@ -7,7 +7,6 @@ import "../swiper/style.css";
 import { Pagination, Autoplay } from "swiper/modules"; // Importando Autoplay
 import { FaCheck } from "react-icons/fa6";
 
-
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/400.css";
 import { text, title } from "framer-motion/client";
@@ -15,7 +14,7 @@ import { text, title } from "framer-motion/client";
 // Componente de Card
 const CardModule = ({ title, text }) => {
   return (
-    <div className="flex flex-col bg-[#000027] w-[15rem] h-[22rem] lg:w-[17rem] drop-shadow-xl shadow shadow-gray-800 lg:h-[25rem] border border-gray-600/40 px-[0.8rem] rounded-md">
+    <div className="flex flex-col bg-[#000027] w-[15rem] h-[19rem] lg:w-[19rem] drop-shadow-xl shadow shadow-gray-800 lg:h-[22rem] border border-gray-600/40 px-[0.8rem] rounded-md">
       <hr className="w-14 border-2 border-[#FD6F01] translate-x-7 glowing-hr" />
       <div className="flex flex-col mt-5 gap-5">
         <FaCheck className="text-4xl text-[#FD6F01] my-1 translate-x-[2.5rem] translate-y-[-0.5rem]" />
@@ -23,7 +22,9 @@ const CardModule = ({ title, text }) => {
         <h3 className="text-[#FD6F01] text-lg font-montserrat font-semibold">
           {title}
         </h3>
-        <span className="text-white text-md font-light  font-montserrat">{text}</span>
+        <span className="text-white text-md font-light  font-montserrat">
+          {text}
+        </span>
       </div>
     </div>
   );
@@ -32,44 +33,40 @@ const CardModule = ({ title, text }) => {
 // Lista de módulos
 const modules = [
   {
-    title: "Módulo 1: Universo Social Media",
-
-    text: "Descubra as oportunidades do mercado e como se tornar um social media de alta performance. Bônus: Guia prático de atuação.",
+    title: "Mentalidade de alta performance",
+    text: "Adote uma postura estratégica e produtiva para se destacar como social media premium. Bônus: Guia de foco e organização.",
   },
   {
-    title: "Módulo 2: Cliente certo, dinheiro certo",
-
-    text: "Aprenda a prospectar, atrair e manter clientes de alto valor, quebrando objeções e aumentando vendas. Bônus: Modelo de proposta comercial.",
+    title: "Atraia e feche com clientes premium",
+    text: "Saia da zona do desconto e aprenda a negociar com clientes que valorizam seu trabalho. Bônus: Modelo de proposta comercial.",
   },
   {
-    title: "Módulo 3: O processo de gestão",
-
-    text: "Defina público-alvo, estruture um planejamento estratégico e monitore seus resultados com eficiência. Bônus: Modelo de briefing onboarding.",
+    title: "Gestão e diagnóstico de perfis",
+    text: "Vá além do conteúdo: entenda, analise e proponha estratégias que geram resultados reais. Bônus: Modelo de briefing e checklist.",
   },
   {
-    title: "Módulo 4: Criação de conteúdo",
-
-    text: "Organize seu perfil, domine storytelling, gatilhos mentais e aprenda a criar conteúdos que vendem. Bônus: 30 dias de conteúdos, prompts de ChatGPT e pack de ícones.",
+    title: "Planejamento que dá resultados",
+    text: "Crie conteúdos com propósito, autoridade e foco em conversação. Bônus: Calendário de ideias + prompts de IA.",
   },
   {
-    title: "Módulo 5: Luz, câmera, ação",
-
-    text: "Melhore sua gravação e aprenda a editar vídeos no CapCut para aumentar o engajamento. Bônus: Lista de materiais para gravação.",
+    title: "Conteúdo que constrói marca e vende",
+    text: "Use storytelling, copy e identidade visual para criar postagens estratégicas. Bônus: Templates de conteúdo e CTAs.",
   },
   {
-    title: "Módulo 6: Construindo uma carreira sólida",
-
-    text: "Fortaleça seu posicionamento, crie autoridade, faça networking e desenvolva um portfólio de impacto. Bônus: Mapa de posicionamento.",
+    title: "Vídeo: da gravação à conversão",
+    text: "Aprenda a gravar, roteirizar e editar vídeos que engajam e vendem. Bônus: Guia de gravação com celular.",
   },
   {
-    title: "Módulo 7:Profissionalize seu trabalho",
-
-    text: "Formalize seu negócio, precifique corretamente seus serviços e proteja-se com contratos. Bônus: Modelos prontos de precificação e contratos",
+    title: "Sua marca pessoal como vitrine",
+    text: "Construa um posicionamento forte e seja reconhecida como referência no digital. Bônus: Mapa de marca pessoal.",
   },
-
   {
-    title: "Módulo Bônus: Fundamentos de Tráfego Pago",
-    text: "Aprenda os princípios do tráfego pago, como configurar campanhas no Meta Ads e Google Ads, segmentar o público certo e analisar métricas para otimizar resultados.",
+    title: "Profissionalize seu trabalho",
+    text: "Organize sua entrega, precifique com estratégia e tenha segurança jurídica. Bônus: Contratos e planilha de precificação.",
+  },
+  {
+    title: "Fundamentos de tráfego pago",
+    text: "Entenda o básico dos anúncios e comece a atrair mais vendas com tráfego. Bônus: Estrutura de campanha simples e eficaz.",
   },
 ];
 
@@ -88,7 +85,8 @@ export const Swipers = () => {
           spaceBetween: 0,
         } /* Corrigindo para telas pequenas */,
         768: { slidesPerView: 2, spaceBetween: 8 },
-        1024: { slidesPerView: 4, spaceBetween: 10 },
+        1024: { slidesPerView: 3, spaceBetween: 10 },
+        1560: { slidesPerView: 4, spaceBetween: 10 },
       }}
       modules={[Pagination, Autoplay]}
       className="swiper-container"
